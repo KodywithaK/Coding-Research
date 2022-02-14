@@ -1,0 +1,53 @@
+Object1:
+  # comment
+  key: value
+  # list by hyphen
+  list1:
+    - 1
+    - 2
+    - 3
+  # list by bracket
+  list2: [4,5,6]
+
+Single_Line_String: >
+  word1
+  word2
+  word3
+
+Multi_Line_String: |
+  line1
+  line2
+  line3
+
+Numbers: [
+Binary: !!int 0b11110001001000000,
+Exponent: 123.456E+3,
+Float: !!float 1234.56005859375,
+Hexa: !!int 0x1E240,
+Number: 123456,
+Negative Number: !!int -123456,
+Octal: !!int 0361100
+]
+
+#Booleans: [
+#Boolean0: !!bool yes,
+#Boolean1: !!bool y,
+#Boolean2: !!bool Y,
+#Boolean3: !!bool true,
+#Boolean4: !!bool no,
+#Boolean5: !!bool n,
+#Boolean6: !!bool N,
+#Boolean7: !!bool false
+#]
+
+Reference_1: &anchor
+  key1: value1
+  key2: value2
+  key3: value3
+
+Reference_2:
+  *anchor
+
+Reference_3:
+  <<: *anchor
+  key4: value4
