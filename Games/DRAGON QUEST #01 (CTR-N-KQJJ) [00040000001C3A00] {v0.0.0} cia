@@ -1,0 +1,30 @@
+<!--Extracted with Karameru v1.0.14-47d7462b-->
+
+GameData.cxi {
+	ExeFs {
+		.code
+		banner
+		icon {
+			00 <!--24x24_RGB565-->
+			01 <!--48x48_RGB565-->
+		};
+	};
+	RomFs {
+		dq1vol.bin {};
+		retro1_res.dat {	<!--Kuriimu2 v1.2.1 plugin DQ Dat-->
+			
+		};
+	};
+};
+
+Manual.cfa {
+	RomFS {
+		Manual.bcma {
+			BcmaInfo.arc
+			JPN_ja_index.arc
+			JPN_ja_large.arc
+			JPN_ja_small.arc
+			JPN_ja_texture.arc
+		};
+	};
+};
