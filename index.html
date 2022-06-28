@@ -7,6 +7,9 @@
         <title>JSON</title>
     </head>
     <body>
+
+        <ul id="test_2"></ul>
+
         <script>
             var test = {
                 key: "value",
@@ -47,9 +50,12 @@
             console.log(stringify);
             console.log(parse);
 
+            var output = '';
             for(var i = 0; i < test_2.length; i++){
                 console.log(test_2[i]);
+                output += '<li>'+test_2[i].object+'</li>';
             }
+            document.getElementById('test_2').innerHTML = output;
         </script>
     </body>
 </html>
