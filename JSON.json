@@ -1,0 +1,14 @@
+{
+	"key":"value",
+	"string": "string",
+	"number": 1, 10.0, 10e2,
+	"boolean": true,
+	"array_single-line": [0,1,2,"string"],
+	"array_multi-line": [{
+		"key":"value",
+		"string": "string",
+		"number": 1, 10.0, 10e2,
+		"boolean": true,
+		"array_single-line": ["string_1","string_2"],
+	}]
+}.
