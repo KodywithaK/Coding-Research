@@ -9,10 +9,16 @@
     <body>
         <script>
             var test = {
-                string: "string"
+                key: "value",
+                number: [1,10.0,10e2],
+                boolean: function (){
+                    return 'true';
+                }
             }
 
             console.log(test);
+            console.log(test.number);
+            console.log(test.boolean);
         </script>
     </body>
 </html>
