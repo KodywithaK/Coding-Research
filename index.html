@@ -13,12 +13,43 @@
                 number: [1,10.0,10e2],
                 boolean: function (){
                     return 'true';
+                },
+                object: {
+                    key: "value",
+                    array: [0,1,2]
                 }
-            }
+            };
+            
+            stringify = JSON.stringify(test);
+            parse = JSON.parse(test);
+
+            var test_2 = [
+                {
+                    object: "Object_0",
+                    number: 0
+                },
+                {
+                    object: "Object_1",
+                    number: 1
+                },
+                {
+                    object: "Object_2",
+                    number: 2
+                }
+            ];
 
             console.log(test);
             console.log(test.number);
             console.log(test.boolean());
+            console.log(test.object.key);
+            console.log(test.object.array[0]);
+            
+            console.log(stringify);
+            console.log(parse);
+
+            for(var i = 0; i < test_2.length; i++){
+                console.log(test_2[i]);
+            }
         </script>
     </body>
 </html>
