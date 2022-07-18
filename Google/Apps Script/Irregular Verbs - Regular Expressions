@@ -1,0 +1,15 @@
+// (来|き|く|こ)る - "to come" (spatially or temporally); to approach; to arrive (2) (vk,vi,aux-v) (uk) to come back; to do ... and come back (after the -te form of a verb) (3) (vk,vi,aux-v) (uk) to come to be; to become; to get; to grow; to continue (after the -te form of a verb) (4) (vk,vi) to come from; to be caused by; to derive from (5) (vk,vi) to come to (i.e. "when it comes to spinach ...")
+/(?<!で)(\S+て)?(来|[きくこ])(る(な|でしょう)?|い|させ(ない|ます|ません|る)|た(でしょう|ら|くだし)?|て(ください)?|な(い(だろう|でください|でしょう)?|かった(だろう|でしょう|ら)?|ければ)|ま(した(ら)?|す(れば)?|せ(ば|ん(でした(ら)?|なら)?))|よう|られ(ない|ま(す|せん)|る)|る(でしょう|な)|れば)/gm
+
+// です - "to be"
+/(で(は(ありません(でした)?|な(い|かった(ら)?|くて))|し(た|ょう)|す))|(だ(った(ら)?|ろう)?)((?=と)|(?=.{1,3}$))/gm
+
+// (有|在|あ)る - "is or exists" for the location of inaminate objects
+/(有|在|あ)(る((\s)?な)?|っ(た(ら)?|ち[まゃ]う|て)|ら(せ(ない|る)|な(い(で)?|かった(ら)?|ければ)|れ(ない|る))|れ(ない|ば|る)?|り(ま(せん((\s)?でした)?|す|した)|なさい)?|ろう)/gm
+
+// (居|い)る - "is or exists" for the location of people or animals
+// /(居|い)させ(ない|られ(ない|る)|る)|た|て|な(い|かった|くて)|ま(した|す|せん(でした)?)|られ(ない|る)|る(な)?ろ/gm
+/(居|い)(る((\s)?な)?|っ(た(ら)?|ち[まゃ]う|て)|ら(せ(ない|る)|な(い(で)?|かった(ら)?|ければ)|れ(ない|る))|れ(ない|ば|る)?|り(ま(せん((\s)?でした)?|す|した)|なさい)?|ろう)/gm
+
+// (為|す)る - "to make" verbal-suffix
+/(と)?(為|さ(せ(ない|る)|れる)|し(た(ら)?|ち[まゃ]う|て|な(い(で)?|かった(ら)?|ければ|さい)|ま(した|す|せん(\s)?(でした)?)|よう|ろ)?|す(る(\s)?(な)?|れば))/gm
